@@ -1,5 +1,7 @@
+*.json
+!package*.json
 venv/
 __pycache__/
+*.log
 *.pyc
-*.json
 .env
