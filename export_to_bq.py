@@ -20,7 +20,7 @@ logger = logging.getLogger("glance-s2s-export")
 
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 REDIS_KEY = os.getenv("REDIS_KEY", "glance_s2s:pending")
-BQ_PROJECT = os.getenv("BQ_PROJECT", "inmobi-dev-488419")
+BQ_PROJECT = os.getenv("BQ_PROJECT")
 BQ_DATASET = os.getenv("BQ_DATASET", "glance_s2s")
 BQ_TABLE = os.getenv("BQ_TABLE", "clicks")
 

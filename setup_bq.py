@@ -8,7 +8,7 @@ from google.api_core.exceptions import Conflict
 
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-BQ_PROJECT = os.getenv("BQ_PROJECT", "inmobi-dev-488419")
+BQ_PROJECT = os.getenv("BQ_PROJECT")
 BQ_DATASET = os.getenv("BQ_DATASET", "glance_s2s")
 BQ_TABLE = os.getenv("BQ_TABLE", "clicks")
 
