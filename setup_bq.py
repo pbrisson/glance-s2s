@@ -40,6 +40,7 @@ schema = [
     bigquery.SchemaField("sub10", "STRING"),
     bigquery.SchemaField("ip", "STRING"),
     bigquery.SchemaField("user_agent", "STRING"),
+    bigquery.SchemaField("platform", "STRING"),
 ]
 
 table_ref = bigquery.Table(f"{BQ_PROJECT}.{BQ_DATASET}.{BQ_TABLE}", schema=schema)

@@ -56,6 +56,7 @@ async def track(
     sub8: Optional[str] = Query(None),
     sub9: Optional[str] = Query(None),
     sub10: Optional[str] = Query(None),
+    platform: Optional[str] = Query(None),
 ):
     """Record a click event and return a tracking pixel."""
     record = {
@@ -72,6 +73,7 @@ async def track(
         "sub8": sub8 or "",
         "sub9": sub9 or "",
         "sub10": sub10 or "",
+        "platform": platform or "",
         "ip": request.headers.get("x-forwarded-for", request.client.host if request.client else ""),
         "user_agent": request.headers.get("user-agent", ""),
     }
